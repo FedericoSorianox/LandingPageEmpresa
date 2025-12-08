@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Software & Automatización | Freelancer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Dev<span class="gradient-text">Studio</span></a>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Potencia tu Negocio con <br><span class="gradient-text">Software Inteligente</span></h1>
+                <p>Freelancer especializado en Chatbots de WhatsApp con IA, Sistemas Financieros a medida y Automatización de Procesos.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Agendar Consultoría</a>
+                    <a href="#proyectos" class="btn btn-outline">Ver Portafolio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2 class="section-title">Soluciones a Medida</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="icon gradient-text"><i class="fab fa-whatsapp"></i></div>
+                    <h3>Chatbots WhatsApp IA</h3>
+                    <p>Asistentes virtuales que entienden el contexto de tu empresa, responden a clientes 24/7 y automatizan ventas directamente en WhatsApp.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="icon gradient-text"><i class="fas fa-chart-line"></i></div>
+                    <h3>Sistemas Financieros</h3>
+                    <p>Visualiza tus finanzas en tiempo real. Carga gastos vía Telegram, PDF o Excel y controla todo desde un dashboard personalizado conectado a Google Sheets.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="icon gradient-text"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Landing Pages Modernas</h3>
+                    <p>Diseño web de alto impacto, optimizado para conversión y velocidad. Estética premium que diferencia tu marca de la competencia.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="icon gradient-text"><i class="fas fa-robot"></i></div>
+                    <h3>Automatización n8n</h3>
+                    <p>Conecta tus aplicaciones favoritas y crea flujos de trabajo automáticos para ahorrar horas de tareas repetitivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Deep Dive -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Casos de Éxito</h2>
+            
+            <!-- Project 1: WhatsApp Bot -->
+            <div class="showcase">
+                <div class="showcase-content">
+                    <span class="gradient-text" style="font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Producto Destacado</span>
+                    <h3>Chatbot Inteligente para PyMEs</h3>
+                    <p style="margin-bottom: 20px; color: var(--text-secondary);">Un sistema robusto que transforma la atención al cliente. No es solo un bot de respuestas pregrabadas, es una IA entrenada con tu información.</p>
+                    <ul>
+                        <li>Responde preguntas frecuentes con contexto real.</li>
+                        <li>Escalable para cualquier tamaño de empresa.</li>
+                        <li>Integración directa con tu número de WhatsApp Business.</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline" style="font-size: 0.9rem;">Me interesa esto</a>
+                </div>
+                <div class="showcase-visual">
+                    <!-- Placeholder UI looking like a chat -->
+                    <div style="width: 250px; height: 400px; background: #1a1a2e; border-radius: 20px; padding: 15px; display: flex; flex-direction: column; gap: 10px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div style="align-self: flex-start; background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 12px 12px 12px 0; max-width: 80%;">Hola, ¿cuáles son sus precios?</div>
+                        <div style="align-self: flex-end; background: linear-gradient(135deg, #7000df, #00d4ff); padding: 8px 12px; border-radius: 12px 12px 0 12px; max-width: 80%;">Hola! Nuestros planes comienzan desde $XX. ¿Te gustaría agendar una demo?</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Finance System -->
+            <div class="showcase" style="direction: rtl;"> <!-- Visual trick to flip order, content needs ltr reset -->
+                <div class="showcase-content" style="direction: ltr;">
+                    <span class="gradient-text" style="font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Gestión Total</span>
+                    <h3>Dashboard de Finanzas Personales</h3>
+                    <p style="margin-bottom: 20px; color: var(--text-secondary);">Olvídate de las apps complejas. Tu contabilidad simplificada al máximo, alimentada desde donde estés.</p>
+                    <ul>
+                        <li>Carga datos enviando un mensaje por Telegram.</li>
+                        <li>Sube tus estados de cuenta en PDF o Excel.</li>
+                        <li>Todo centralizado en Google Sheets y visualizado en web.</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline" style="font-size: 0.9rem;">Ver Demo</a>
+                </div>
+                <div class="showcase-visual" style="direction: ltr;">
+                    <!-- Placeholder UI looking like a chart -->
+                     <div style="width: 300px; height: 200px; display: flex; align-items: flex-end; justify-content: space-around; padding-bottom: 20px; border-bottom: 2px solid rgba(255,255,255,0.1);">
+                        <div style="width: 40px; height: 60%; background: #00d4ff; border-radius: 4px 4px 0 0;"></div>
+                        <div style="width: 40px; height: 80%; background: #7000df; border-radius: 4px 4px 0 0;"></div>
+                        <div style="width: 40px; height: 40%; background: #ff0055; border-radius: 4px 4px 0 0;"></div>
+                        <div style="width: 40px; height: 90%; background: #ffcc00; border-radius: 4px 4px 0 0;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section section">
+        <div class="container">
+            <div class="contact-box">
+                <h2 class="section-title">¿Listo para mejorar tu sistema?</h2>
+                <p style="margin-bottom: 40px; color: var(--text-secondary); font-size: 1.1rem;">Hablemos sobre tu proyecto. Ya sea una simple landing page o un sistema complejo de automatización, tengo la solución.</p>
+                <form id="contactForm" style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: 0 auto;">
+                    <input type="text" placeholder="Nombre" style="padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white;">
+                    <input type="email" placeholder="Email" style="padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white;">
+                    <textarea placeholder="Mensaje" rows="4" style="padding: 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); color: white;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+                </form>
+                <div style="margin-top: 30px;">
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">O contáctame directo por WhatsApp</p>
+                    <a href="#" style="color: #00d4ff; text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;"><i class="fab fa-whatsapp"></i> +XX XXX XXX XXXX</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px 0; border-top: 1px solid var(--card-border); color: var(--text-secondary); font-size: 0.9rem;">
+        <p>&copy; 2024 DevStudio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
