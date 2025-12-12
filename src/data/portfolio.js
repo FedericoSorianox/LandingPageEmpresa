@@ -1,12 +1,14 @@
 import { MessageSquare, LineChart, Layout, Bot } from 'lucide-react';
+import chatbotWorkflow from '../assets/chatbot-workflow.png';
+import chatbotChat from '../assets/chatbot-chat.png';
 
 export const portfolioData = {
     personal: {
-        name: "DevStudio",
+        name: "Vanguard Lab",
         headline: "Potencia tu Negocio con Software Inteligente",
-        subheadline: "Freelancer especializado en Chatbots de WhatsApp con IA, Sistemas Financieros a medida y Automatización de Procesos.",
-        contactEmail: "contacto@devstudio.com",
-        whatsapp: "+59899123456" // Update with real number
+        subheadline: "Automatiza tus ventas y organiza tus finanzas sin esfuerzo",
+        contactEmail: "contacto@gmail.com",
+        whatsapp: "+59892506506"
     },
     services: [
         {
@@ -16,7 +18,7 @@ export const portfolioData = {
         },
         {
             title: "Sistemas Financieros",
-            description: "Visualiza tus finanzas en tiempo real. Carga gastos vía Telegram, PDF o Excel y controla todo desde un dashboard personalizado conectado a Google Sheets.",
+            description: "Visualiza tus finanzas en tiempo real. Control de Gastos Empresarial",
             icon: LineChart
         },
         {
@@ -25,7 +27,7 @@ export const portfolioData = {
             icon: Layout
         },
         {
-            title: "Automatización n8n",
+            title: "Automatización de aplicaciones",
             description: "Conecta tus aplicaciones favoritas y crea flujos de trabajo automáticos para ahorrar horas de tareas repetitivas.",
             icon: Bot
         }
@@ -37,23 +39,25 @@ export const portfolioData = {
             category: "Producto Destacado",
             description: "Un sistema robusto que transforma la atención al cliente. No es solo un bot de respuestas pregrabadas, es una IA entrenada con tu información.",
             features: [
-                "Responde preguntas frecuentes con contexto real.",
-                "Escalable para cualquier tamaño de empresa.",
-                "Integración directa con tu número de WhatsApp Business."
+                "Atención inmediata: Responde a tus clientes en 0 segundos, a cualquier hora.",
+                "Cero respuestas robóticas: Tu cliente sentirá que habla con una persona real.",
+                "Ventas automáticas: Se conecta a tu WhatsApp Business para agendar citas o vender productos sin que tú muevas un dedo."
             ],
-            cta: "Me interesa esto"
+            cta: "Quiero automatizar mis ventas",
+            images: [chatbotWorkflow, chatbotChat]
         },
         {
             id: 2,
-            title: "Dashboard de Finanzas Personales",
+            title: "Dashboard de Finanzas",
             category: "Gestión Total",
             description: "Olvídate de las apps complejas. Tu contabilidad simplificada al máximo, alimentada desde donde estés.",
             features: [
                 "Carga datos enviando un mensaje por Telegram.",
                 "Sube tus estados de cuenta en PDF o Excel.",
-                "Todo centralizado en Google Sheets y visualizado en web."
+                "Todo centralizado y visualizado en web."
             ],
-            cta: "Ver Demo"
+            cta: "Ver Demo",
+            images: ["https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"]
         }
     ]
 };

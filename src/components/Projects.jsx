@@ -49,14 +49,18 @@ const Projects = () => {
                             <div className="flex-1 w-full">
                                 <div className="relative group perspective-1000">
                                     <div className="absolute -inset-2 bg-gradient-to-r from-brand-purple to-brand-cyan opacity-20 blur-xl rounded-2xl group-hover:opacity-40 transition-opacity duration-500" />
-                                    <img
-                                        src={index === 0
-                                            ? "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                            : "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                        }
-                                        alt={project.title}
-                                        className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover transform transition-transform duration-500 group-hover:scale-[1.02]"
-                                    />
+
+                                    <div className="flex flex-col gap-6">
+                                        {project.images.map((img, i) => (
+                                            <div key={i} className="relative rounded-2xl shadow-lg border border-gray-100 overflow-hidden group/img">
+                                                <img
+                                                    src={img}
+                                                    alt={`${project.title} screenshot ${i + 1}`}
+                                                    className="w-full h-auto object-cover transform transition-transform duration-700 group-hover/img:scale-105"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>

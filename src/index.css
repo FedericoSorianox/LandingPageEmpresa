@@ -17,6 +17,11 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-cyan;
   }
 
+  .text-gradient-brand {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #111827 0%, #111827 55%, #7c3aed 85%, #06b6d4 100%);
+  }
+
   .text-gradient-secondary {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-orange-400;
   }
