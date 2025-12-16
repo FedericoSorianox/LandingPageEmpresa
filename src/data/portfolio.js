@@ -1,5 +1,5 @@
 import { MessageSquare, LineChart, Layout, Bot } from 'lucide-react';
-import chatbotWorkflow from '../assets/chatbot-workflow.png';
+
 import chatbotChat from '../assets/chatbot-chat.png';
 
 export const portfolioData = {
@@ -44,7 +44,7 @@ export const portfolioData = {
                 "Ventas automáticas: Se conecta a tu WhatsApp Business para agendar citas o vender productos sin que tú muevas un dedo."
             ],
             cta: "Quiero automatizar mis ventas",
-            images: [chatbotWorkflow, chatbotChat]
+            images: [{ src: chatbotChat, className: "w-full mx-auto drop-shadow-2xl rounded-[2.5rem]" }]
         },
         {
             id: 2,

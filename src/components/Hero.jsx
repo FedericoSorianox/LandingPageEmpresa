@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
+import heroImage from '../assets/hero-image.png';
 
 const Hero = () => {
     const { personal } = portfolioData;
@@ -54,8 +55,8 @@ const Hero = () => {
                         <div className="relative">
                             <div className="absolute -inset-4 bg-gradient-to-r from-brand-purple to-brand-cyan opacity-20 blur-2xl rounded-[30px]" />
                             <img
-                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-                                alt="Team collaboration"
+                                src={heroImage}
+                                alt="Intelligent Software Visualization"
                                 className="relative rounded-[30px] shadow-2xl w-full object-cover h-[400px] md:h-[500px]"
                             />
                         </div>
