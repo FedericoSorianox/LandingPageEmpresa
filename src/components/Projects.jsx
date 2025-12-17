@@ -40,9 +40,12 @@ const Projects = () => {
                                     ))}
                                 </ul>
 
-                                <button className="px-8 py-3 border border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white rounded-full font-semibold transition-all">
+                                <a
+                                    href={project.ctaLink || "#contact"}
+                                    className="inline-block px-8 py-3 border border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white rounded-full font-semibold transition-all"
+                                >
                                     {project.cta}
-                                </button>
+                                </a>
                             </div>
 
                             {/* Visual Placeholder */}

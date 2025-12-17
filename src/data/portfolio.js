@@ -1,6 +1,7 @@
 import { MessageSquare, LineChart, Layout, Bot } from 'lucide-react';
 
 import chatbotChat from '../assets/chatbot-chat.png';
+import adminDashboard from '../assets/admin-dashboard.png';
 
 export const portfolioData = {
     personal: {
@@ -44,20 +45,21 @@ export const portfolioData = {
                 "Ventas automáticas: Se conecta a tu WhatsApp Business para agendar citas o vender productos sin que tú muevas un dedo."
             ],
             cta: "Quiero automatizar mis ventas",
+            ctaLink: "#contact",
             images: [{ src: chatbotChat, className: "w-full mx-auto drop-shadow-2xl rounded-[2.5rem]" }]
         },
         {
             id: 2,
-            title: "Dashboard de Finanzas",
+            title: "Sistema de Gestión de Academias",
             category: "Gestión Total",
-            description: "Olvídate de las apps complejas. Tu contabilidad simplificada al máximo, alimentada desde donde estés.",
+            description: "Gestión de academia o gimnasio con manejo de socios, pagos y productos.",
             features: [
-                "Carga datos enviando un mensaje por Telegram.",
-                "Sube tus estados de cuenta en PDF o Excel.",
-                "Todo centralizado y visualizado en web."
+                "Control total de socios activos e inactivos.",
+                "Gestión de pagos y deudas pendientes.",
+                "Inventario de productos y fiados."
             ],
             cta: "Ver Demo",
-            images: ["https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"]
+            images: [{ src: adminDashboard, className: "w-full mx-auto drop-shadow-2xl rounded-[2.5rem]" }]
         }
     ]
 };
