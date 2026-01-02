@@ -2,6 +2,7 @@ import { MessageSquare, LineChart, Layout, Bot } from 'lucide-react';
 
 import chatbotChat from '../assets/chatbot-chat.png';
 import adminDashboard from '../assets/admin-dashboard.png';
+import gymWorksPro from '../assets/gymworkspro-dashboard.png';
 
 export const portfolioData = {
     personal: {
@@ -50,16 +51,17 @@ export const portfolioData = {
         },
         {
             id: 2,
-            title: "Sistema de Gestión de Academias",
+            title: "GymWorksPro",
             category: "Gestión Total",
-            description: "Gestión de academia o gimnasio con manejo de socios, pagos y productos.",
+            description: "La solución definitiva para la gestión de academias y gimnasios, con control total de socios, pagos y productos.",
             features: [
                 "Control total de socios activos e inactivos.",
                 "Gestión de pagos y deudas pendientes.",
                 "Inventario de productos y fiados."
             ],
             cta: "Ver Demo",
-            images: [{ src: adminDashboard, className: "w-full mx-auto drop-shadow-2xl rounded-[2.5rem]" }]
+            videoUrl: "/videos/gymworks-demo.mp4", // Ruta al video
+            images: [{ src: gymWorksPro, className: "w-full mx-auto drop-shadow-2xl rounded-[2.5rem]" }]
         }
     ]
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import heroImage from '../assets/hero-image.png';
+import heroImage from '../assets/hero-image.jpeg';
 
 const Hero = () => {
     const { personal } = portfolioData;

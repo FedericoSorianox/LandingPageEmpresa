@@ -1,9 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, X } from 'lucide-react';
 
 const Projects = () => {
+    const [selectedVideo, setSelectedVideo] = React.useState(null);
+
     return (
         <section id="projects" className="py-20 bg-white">
             <div className="container mx-auto px-6">
@@ -40,12 +42,21 @@ const Projects = () => {
                                     ))}
                                 </ul>
 
-                                <a
-                                    href={project.ctaLink || "#contact"}
-                                    className="inline-block px-8 py-3 border border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white rounded-full font-semibold transition-all"
-                                >
-                                    {project.cta}
-                                </a>
+                                {project.cta === "Ver Demo" && project.videoUrl ? (
+                                    <button
+                                        onClick={() => setSelectedVideo(project.videoUrl)}
+                                        className="inline-block px-8 py-3 bg-brand-purple text-white hover:bg-brand-purple/90 rounded-full font-semibold transition-all shadow-lg hover:shadow-brand-purple/20"
+                                    >
+                                        {project.cta}
+                                    </button>
+                                ) : (
+                                    <a
+                                        href={project.ctaLink || "#contact"}
+                                        className="inline-block px-8 py-3 border border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white rounded-full font-semibold transition-all"
+                                    >
+                                        {project.cta}
+                                    </a>
+                                )}
                             </div>
 
                             {/* Visual Placeholder */}
@@ -76,6 +87,40 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
+            {/* Video Modal */}
+            <AnimatePresence>
+                {selectedVideo && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setSelectedVideo(null)}
+                        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            onClick={(e) => e.stopPropagation()}
+                            className="relative w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl"
+                        >
+                            <button
+                                onClick={() => setSelectedVideo(null)}
+                                className="absolute top-4 right-4 z-10 p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
+                            >
+                                <X className="w-6 h-6" />
+                            </button>
+
+                            <video
+                                src={selectedVideo}
+                                className="w-full h-full"
+                                controls
+                                autoPlay
+                            />
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </section>
     );
 };
